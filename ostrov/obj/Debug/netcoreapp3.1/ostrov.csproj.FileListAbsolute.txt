@@ -1,0 +1,12 @@
+/Users/sabakoghuashvili/Desktop/ostrov/bin/Debug/netcoreapp3.1/ostrov.deps.json
+/Users/sabakoghuashvili/Desktop/ostrov/bin/Debug/netcoreapp3.1/ostrov.runtimeconfig.json
+/Users/sabakoghuashvili/Desktop/ostrov/bin/Debug/netcoreapp3.1/ostrov.runtimeconfig.dev.json
+/Users/sabakoghuashvili/Desktop/ostrov/bin/Debug/netcoreapp3.1/ostrov.dll
+/Users/sabakoghuashvili/Desktop/ostrov/bin/Debug/netcoreapp3.1/ostrov.pdb
+/Users/sabakoghuashvili/Desktop/ostrov/obj/Debug/netcoreapp3.1/ostrov.csprojAssemblyReference.cache
+/Users/sabakoghuashvili/Desktop/ostrov/obj/Debug/netcoreapp3.1/ostrov.csproj.CoreCompileInputs.cache
+/Users/sabakoghuashvili/Desktop/ostrov/obj/Debug/netcoreapp3.1/ostrov.AssemblyInfoInputs.cache
+/Users/sabakoghuashvili/Desktop/ostrov/obj/Debug/netcoreapp3.1/ostrov.AssemblyInfo.cs
+/Users/sabakoghuashvili/Desktop/ostrov/obj/Debug/netcoreapp3.1/ostrov.dll
+/Users/sabakoghuashvili/Desktop/ostrov/obj/Debug/netcoreapp3.1/ostrov.pdb
+/Users/sabakoghuashvili/Desktop/ostrov/obj/Debug/netcoreapp3.1/ostrov.genruntimeconfig.cache
