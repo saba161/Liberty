@@ -7,7 +7,7 @@ namespace calculator
     {
         static void Main(string[] args)
         {
-            string exp = "((3+7)-3*4)/2+6"; //56*29-+.
+            string exp = "2*6(8-3)*6*2/3";
             var ans = infixToPostfix(exp);
             var result = CalculatePostfix(ans);
             Console.WriteLine(result);
@@ -91,8 +91,22 @@ namespace calculator
                     answer.Push(Int32.Parse(item.ToString()));
                 }
             }
+            if (answer.Count == 1)
+            {
+                return answer.Peek();
+            }
+            else
+            {
+                var x = answer.Peek();
+                answer.Pop();
 
-            return answer.Peek();
+                var y = answer.Peek();
+                answer.Pop();
+
+                answer.Push(x * y);
+
+                return answer.Peek();
+            }
         }
 
         private static int Operator(char oper, int x, int y)

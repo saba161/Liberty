@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sabakoghuashvili/Desktop/calculator/calculator.csproj",
+      "projectUniqueName": "/Users/sabakoghuashvili/Desktop/Liberty/calculator/calculator.csproj",
       "projectName": "calculator",
-      "projectPath": "/Users/sabakoghuashvili/Desktop/calculator/calculator.csproj",
+      "projectPath": "/Users/sabakoghuashvili/Desktop/Liberty/calculator/calculator.csproj",
       "packagesPath": "/Users/sabakoghuashvili/.nuget/packages/",
-      "outputPath": "/Users/sabakoghuashvili/Desktop/calculator/obj/",
+      "outputPath": "/Users/sabakoghuashvili/Desktop/Liberty/calculator/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/sabakoghuashvili/.nuget/NuGet/NuGet.Config"
