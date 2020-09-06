@@ -1,74 +1,101 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
-namespace ostrov2
+namespace calculator
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Stack<int> number = new Stack<int>();
-            Stack<char> operators = new Stack<char>();
+            string exp = "((3+7)-3*4)/2+6"; //56*29-+.
+            var ans = infixToPostfix(exp);
+            var result = CalculatePostfix(ans);
+            Console.WriteLine(result);
+        }
 
-            var s = "1+2*(3+4/2-(1+2))*2+1".ToCharArray();
+        private static string infixToPostfix(string exp) 
+        {
+            Stack<char> stack = new Stack<char>();
 
-            foreach(var item in s)
-            {
-                if(item == '+' || item == '-' || item == '/' || item == '*' || item == '(' || item == ')')
-                {
-                    if(operators.Count() != 0)
+            var examples = exp.ToCharArray();
+
+            string result = "";
+
+            foreach(var item in examples)
+            {  
+                if (item != ')' && item != '(' && item != '+' && item != '-' && item != '*' && item != '/') 
+                { 
+                    result = result + item;
+                } 
+
+                else if (item == '(') 
+                { 
+                    stack.Push(item); 
+                } 
+    
+                //  If the scanned character is an ')', pop and output from the stack   
+                // until an '(' is encountered.  
+                else if (item == ')') 
+                { 
+                    while (stack.Count > 0 && stack.Peek() != '(') 
                     {
-                        if(Priorities(operators.Peek()) < Priorities(item) || item == '(' || item == ')')
-                        {
-                            operators.Push(item);
-                        }
-                        else
-                        {
-                            int x = number.Peek();
-                            number.Pop();
-                            int y = number.Peek();
-                            number.Pop();
-                            int result = Operator(operators.Peek(), y, x);
-                            operators.Pop();
-                            number.Push(result);
-                            operators.Push(item);
-                        }
-                    }
+                        result = result + stack.Pop();
+                    } 
+    
+                    if (stack.Count > 0 && stack.Peek() != '(') 
+                    { 
+                        throw new ArgumentException("invalid expression "); 
+                    } 
                     else
-                    {
-                        operators.Push(item);
-                    }
+                    { 
+                        stack.Pop(); 
+                    } 
+                } 
+                else // an operator is encountered 
+                { 
+                    while (stack.Count > 0 && Priorities(item) <= Priorities(stack.Peek())) 
+                    { 
+                        result = result + stack.Pop();
+                    } 
+                    stack.Push(item); 
+                } 
+            }
+            // pop all the operators from the stack  
+            while (stack.Count > 0) 
+            { 
+                result = result + stack.Pop();
+            } 
+    
+            return result; 
+        }
+
+        private static int CalculatePostfix(string postfix)
+        {
+            Stack<int> answer = new Stack<int>();
+            var post = postfix.ToCharArray();
+
+            foreach (var item in post)
+            {
+                if (item == '+' || item == '-' || item == '/' || item == '*')
+                {
+                    var x = answer.Peek();
+                    answer.Pop();
+
+                    var y = answer.Peek();
+                    answer.Pop();
+
+                    answer.Push(Operator(item, y, x));
                 }
                 else
                 {
-                    number.Push(int.Parse(item.ToString()));
+                    answer.Push(Int32.Parse(item.ToString()));
                 }
             }
-        }
-        public static void Chek(char item)
-        {
-            
+
+            return answer.Peek();
         }
 
-        public static int Priorities(char oper)
-        {
-            switch(oper)
-            {
-                case '+':
-                    return 1;
-                case '-':
-                    return 1;
-                case '*':
-                    return 2;
-                case '/':
-                    return 2;
-            }
-
-            return 0;
-        }
-
-        public static int Operator(char oper, int x, int y)
+        private static int Operator(char oper, int x, int y)
         {
             switch(oper)
             {
@@ -83,5 +110,22 @@ namespace ostrov2
             }
             throw new ArgumentException("Unexpected operator string: " + oper);
         }
+
+        private static int Priorities(char ch) 
+        { 
+            switch (ch) 
+            { 
+            case '+': 
+                return 1;
+            case '-': 
+                return 1; 
+    
+            case '*':
+                return 2;
+            case '/': 
+                return 2; 
+            } 
+            return -1; 
+        } 
     }
 }

@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "ostrov2/1.0.0": {
+      "calculator/1.0.0": {
         "runtime": {
-          "ostrov2.dll": {}
+          "calculator.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "ostrov2/1.0.0": {
+    "calculator/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

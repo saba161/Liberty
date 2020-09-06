@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sabakoghuashvili/Desktop/calculator/ostrov2.csproj",
-      "projectName": "ostrov2",
-      "projectPath": "/Users/sabakoghuashvili/Desktop/calculator/ostrov2.csproj",
+      "projectUniqueName": "/Users/sabakoghuashvili/Desktop/calculator/calculator.csproj",
+      "projectName": "calculator",
+      "projectPath": "/Users/sabakoghuashvili/Desktop/calculator/calculator.csproj",
       "packagesPath": "/Users/sabakoghuashvili/.nuget/packages/",
       "outputPath": "/Users/sabakoghuashvili/Desktop/calculator/obj/",
       "projectStyle": "PackageReference",
