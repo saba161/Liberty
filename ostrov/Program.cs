@@ -10,13 +10,20 @@ namespace ostrov
 
         static void Main(string[] args)
         {
-            columns = int.Parse(Console.ReadLine());
-            rows = int.Parse(Console.ReadLine());
+            columns = 3;//int.Parse(Console.ReadLine());
+            rows = 3;//int.Parse(Console.ReadLine());
 
             int count = 0;
-            matrix = new int[rows, columns];
+            //matrix = new int[rows, columns];
 
-            FillTheMatrix(rows, columns);
+            matrix = new int[3,3]
+            {
+                { 1, 0, 0 },
+                { 0, 0, 1 },
+                { 0, 1, 0 },
+            };
+
+           // FillTheMatrix(rows, columns);
 
             for (int i = 0; i < rows; i++)
             {
@@ -47,10 +54,17 @@ namespace ostrov
 
             matrix[row, col] = 2;
 
+            //Horizontal and Vertical
             Check(row + 1, col);
             Check(row - 1, col);
             Check(row, col + 1);
             Check(row, col - 1); 
+            
+            //Diagonal
+            Check(row - 1, col - 1);
+            Check(row + 1, col - 1);
+            Check(row - 1, col + 1);
+            Check(row + 1, col + 1);
 
             return true;
         }

@@ -10,3 +10,16 @@
 /Users/sabakoghuashvili/Desktop/ostrov/obj/Debug/netcoreapp3.1/ostrov.dll
 /Users/sabakoghuashvili/Desktop/ostrov/obj/Debug/netcoreapp3.1/ostrov.pdb
 /Users/sabakoghuashvili/Desktop/ostrov/obj/Debug/netcoreapp3.1/ostrov.genruntimeconfig.cache
+C:\Users\kogo\Desktop\Liberty\ostrov\bin\Debug\netcoreapp3.1\ostrov.exe
+C:\Users\kogo\Desktop\Liberty\ostrov\bin\Debug\netcoreapp3.1\ostrov.deps.json
+C:\Users\kogo\Desktop\Liberty\ostrov\bin\Debug\netcoreapp3.1\ostrov.runtimeconfig.json
+C:\Users\kogo\Desktop\Liberty\ostrov\bin\Debug\netcoreapp3.1\ostrov.runtimeconfig.dev.json
+C:\Users\kogo\Desktop\Liberty\ostrov\bin\Debug\netcoreapp3.1\ostrov.dll
+C:\Users\kogo\Desktop\Liberty\ostrov\bin\Debug\netcoreapp3.1\ostrov.pdb
+C:\Users\kogo\Desktop\Liberty\ostrov\obj\Debug\netcoreapp3.1\ostrov.csprojAssemblyReference.cache
+C:\Users\kogo\Desktop\Liberty\ostrov\obj\Debug\netcoreapp3.1\ostrov.AssemblyInfoInputs.cache
+C:\Users\kogo\Desktop\Liberty\ostrov\obj\Debug\netcoreapp3.1\ostrov.AssemblyInfo.cs
+C:\Users\kogo\Desktop\Liberty\ostrov\obj\Debug\netcoreapp3.1\ostrov.csproj.CoreCompileInputs.cache
+C:\Users\kogo\Desktop\Liberty\ostrov\obj\Debug\netcoreapp3.1\ostrov.dll
+C:\Users\kogo\Desktop\Liberty\ostrov\obj\Debug\netcoreapp3.1\ostrov.pdb
+C:\Users\kogo\Desktop\Liberty\ostrov\obj\Debug\netcoreapp3.1\ostrov.genruntimeconfig.cache
