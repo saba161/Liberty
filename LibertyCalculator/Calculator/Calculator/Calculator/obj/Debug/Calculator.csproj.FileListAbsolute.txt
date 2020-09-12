@@ -1,0 +1,10 @@
+C:\Users\kogo\Desktop\Calculator\Calculator\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\kogo\Desktop\Calculator\Calculator\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\kogo\Desktop\Calculator\Calculator\Calculator\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
+C:\Users\kogo\Desktop\Calculator\Calculator\Calculator\Calculator\obj\Debug\Microsoft.Samples.CompactFramework.Window.resources
+C:\Users\kogo\Desktop\Calculator\Calculator\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+C:\Users\kogo\Desktop\Calculator\Calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+C:\Users\kogo\Desktop\Calculator\Calculator\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\kogo\Desktop\Calculator\Calculator\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\Users\kogo\Desktop\Calculator\Calculator\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\kogo\Desktop\Calculator\Calculator\Calculator\Calculator\bin\Debug\Calculator.exe.config
